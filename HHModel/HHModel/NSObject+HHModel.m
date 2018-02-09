@@ -24,11 +24,11 @@ static inline NSString *toString(id object){
 {
     return [self generateModel:sources map:nil];
 }
-+ (instancetype)generateModel:(id)sources map:(NSDictionary *)map
++ (instancetype)generateModel:(NSDictionary *)sources map:(NSDictionary *)map
 {
     return [self generateModel:sources map:map container:nil];
 }
-+ (instancetype)generateModel:(id)sources map:(NSDictionary *)map container:(NSDictionary <NSString *,Class>*)container;
++ (instancetype)generateModel:(NSDictionary *)sources map:(NSDictionary *)map container:(NSDictionary <NSString *,Class>*)container;
 {
     unsigned int count;
     id model = [[self alloc]init];

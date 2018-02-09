@@ -11,8 +11,8 @@
 @interface NSObject (HHModel)
 
 + (instancetype)generateModel:(NSDictionary *)sources;
-+ (instancetype)generateModel:(id)sources map:(NSDictionary *)map;
-+ (instancetype)generateModel:(id)sources map:(NSDictionary *)map container:(NSDictionary <NSString *,Class>*)container;
++ (instancetype)generateModel:(NSDictionary *)sources map:(NSDictionary *)map;
++ (instancetype)generateModel:(NSDictionary *)sources map:(NSDictionary *)map container:(NSDictionary <NSString *,Class>*)container;
 
 @end
 
